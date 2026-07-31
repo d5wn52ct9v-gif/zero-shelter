@@ -33,3 +33,40 @@ button{
     border:none;
     margin-top:20px;
 }
+hr{
+    border:1px solid #00ff66;
+    margin:20px 0;
+}
+
+h2{
+    color:#00ff66;
+    margin:5px;
+}
+
+h3{
+    color:white;
+    margin:5px;
+    font-weight:normal;
+}
+
+button{
+    transition:.2s;
+}
+
+button:hover{
+    background:#0aff6c;
+    transform:scale(1.02);
+}
+
+body{
+    animation:fade .5s;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
