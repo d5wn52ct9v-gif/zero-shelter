@@ -12,6 +12,6 @@ function login() {
   if (users[id] && users[id].password === pw) {
     window.location.href = users[id].page;
   } else {
-    alert("Resident ID 或 Password 錯誤");
+    alert("居民編號或密碼錯誤！");
   }
 }
