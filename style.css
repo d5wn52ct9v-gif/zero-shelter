@@ -1,0 +1,35 @@
+body{
+    background:#050505;
+    color:#00ff66;
+    font-family:monospace;
+    margin:0;
+}
+
+.login{
+    width:320px;
+    margin:120px auto;
+    text-align:center;
+}
+
+h1{
+    font-size:42px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    background:#000;
+    border:1px solid #00ff66;
+    color:#00ff66;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#00ff66;
+    color:#000;
+    border:none;
+    margin-top:20px;
+}
