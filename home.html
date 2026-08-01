@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="checkLogin()">
+<body onload="checkLogin(); loadResident();">
 
 <div class="login">
 
@@ -20,20 +19,15 @@
 
 <h2>歡迎登入</h2>
 
-<p>居民編號</p>
-<h3>ZS-A-91-0427</h3>
+<h3>姓名　　　：<span id="name"></span></h3>
 
-<p>姓名</p>
-<h3>沈語晴</h3>
+<h3>居民編號　：<span id="residentId"></span></h3>
 
-<p>信用積分</p>
-<h3>96</h3>
+<h3>信用積分　：<span id="credit"></span></h3>
 
-<p>居民等級</p>
-<h3>二級居民</h3>
+<h3>居民等級　：<span id="level"></span></h3>
 
-<p>目前狀態</p>
-<h3 style="color:#00ff66;">正常</h3>
+<h3>目前狀態　：<span id="status"></span></h3>
 
 <br>
 
@@ -73,6 +67,7 @@
 
 </div>
 
+<script src="database.js"></script>
 <script src="script.js"></script>
 
 </body>
