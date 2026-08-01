@@ -12,7 +12,6 @@ function login() {
   if (users[id] && users[id].password === pw) {
 
     localStorage.setItem("login", id);
-
     window.location.href = users[id].page;
 
   } else {
@@ -35,7 +34,24 @@ function checkLogin() {
 function logout() {
 
   localStorage.removeItem("login");
-
   window.location.href = "index.html";
+
+}
+
+function loadResident() {
+
+  const id = localStorage.getItem("login");
+
+  if (!id) return;
+
+  const user = residents[id];
+
+  if (!user) return;
+
+  document.getElementById("name").textContent = user.name;
+  document.getElementById("residentId").textContent = user.id;
+  document.getElementById("credit").textContent = user.credit;
+  document.getElementById("level").textContent = user.level;
+  document.getElementById("status").textContent = user.status;
 
 }
