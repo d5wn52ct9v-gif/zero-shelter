@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>零號避難所</title>
-
+<title>居民資料</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body>
+<body onload="checkLogin(); loadResidentInfo();">
 
 <div class="login">
 
-<h1>建置中</h1>
+<h1>居民資料</h1>
+
+<hr>
+
+<p>姓名：<span id="name"></span></p>
+
+<p>居民編號：<span id="residentId"></span></p>
+
+<p>居民等級：<span id="level"></span></p>
+
+<p>居住區：<span id="area"></span></p>
+
+<p>信用積分：<span id="credit"></span></p>
+
+<p>目前狀態：<span id="status"></span></p>
+
+<br>
 
 <button onclick="location.href='home.html'">
 返回首頁
 </button>
 
 </div>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
